@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スケッチ(長方形)</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu {
+            width: 20%;
+            background-color: #696969;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+        .scrollable-text {
+            width: 650px;
+            height: 300px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h1>メニュー</h1>
+        <ul>
+            <!-- メニュー項目1をクリックした際の処理を追加 -->
+            <li><a href="平行リンク.html">ホーム</a></li>
+	<p>リンク1</p>
+            <li><a href="リンク1_1.html">スケッチ(長方形)</a></li>
+            <li><a href="リンク1_2.html">押し出し</a></li>
+	    <li><a href="リンク1_3.html">スケッチ(円)</a></li>
+            <li><a href="リンク1_4.html">押し出し(切り取り)</a></li>
+		<ul>
+            		<li><a href="リンク1_課題1.html">課題1_1</a></li>
+			<li><a href="リンク1_課題2.html">課題1_2</a></li>
+			<li><a href="リンク1_解説1.html">解説1_1</a></li>
+			<li><a href="リンク1_解説2.html">解説1_2</a></li>
+		</ul>
+	<p>リンク2</p>
+            <li><a href="リンク2_1.html">スケッチと押し出し</a></li>
+		<ul>
+            		<li><a href="リンク2_課題1.html">課題2_1</a></li>
+			<li><a href="リンク2_課題2.html">課題2_2</a></li>
+			<li><a href="リンク2_解説1.html">解説2_1</a></li>
+			<li><a href="リンク2_解説2.html">解説2_2</a></li>
+		</ul>
+	<p>ジョイント</p>
+            <li><a href="リンク1_ジョイント1.html">ジョイント</a></li>
+            <li><a href="リンク2_ジョイント1.html">駆動の仕方と接触の有効化</a></li>
+                <ul>
+            <li><a href="リンク3_課題1.html">課題3_1</a></li>
+            <li><a href="リンク3_課題2.html">課題3_2</a></li>
+       	    <li><a href="リンク3_解説1.html">解説2_2</a></li>
+	    <li><a href="リンク3_解説2.html">解説2_2</a></li>
+		</ul>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>スケッチ(長方形)</h1>
+<button id="openPdfButton">解説_スケッチ(長方形)</button>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // ボタン要素を取得
+    var openPdfButton = document.getElementById("openPdfButton");
+
+    // PDFファイルのURL（1.pdfがあるディレクトリへの相対パス）
+    var pdfUrl = "スケッチ(長方形).pdf";
+
+    // ボタンがクリックされたときの処理
+    openPdfButton.addEventListener("click", function() {
+        // PDFを新しいウィンドウで開く
+        window.open(pdfUrl, "_blank");
+    });
+});
+</script>
+        <p style="text-align:center">動画：長方形のスケッチ</p>
+        <p style="text-align:center"><video controls width="600" height="300" src="スケッチ_長方形.mp4"></video></p>
+<div class="scrollable-text">
+<fieldset style="background: #BDD4FF; border-left: #BDD4FF solid 10px; border: #000000 solid 3px; font-size: 100%; padding: 4px;"><span style="color:#ffffff;">長方形のスケッチ</span></fieldset>
+	<p>①アプリケーションバーにある「ファイル」を押し、「新規デザイン」をクリックする。</p>
+        <p><img controls width="300" height="320" src="リンク1.jpg" rel="lightbox"></p>
+	<p>②アプリケーションバーにある「保存」をクリックし、「名前」と「場所」を選択する。(名前と場所は自由)</p>
+        <p><img controls width="600" height="320" src="リンク2.jpg" rel="lightbox"></p>
+	<p>③ツールバーにある「作成」を押し、「スケッチを作成」をクリックする。</p>
+        <p><img controls width="400" height="320" src="リンク3.jpg" rel="lightbox"></p>
+	<p>④スケッチする面を選択する画面が出てくるので下の写真のように選択します。</p>
+        <p><img controls width="600" height="320" src="リンク4.jpg" rel="lightbox"></p>
+	<p>⑤また「作成」を押し、「長方形」から「中心の長方形」を選択します。</p>
+        <p><img controls width="600" height="320" src="リンク5.jpg" rel="lightbox"></p>
+	<p>⑥中心を選択し任意の長方形を作成します。</p>
+        <p><img controls width="600" height="320" src="リンク6.jpg" rel="lightbox"></p>
+	<p>⑦「作成」を押し、「スケッチ寸法」を選択します。</p>
+        <p><img controls width="600" height="320" src="リンク7.jpg" rel="lightbox"></p>
+	<p>⑧変えたい辺を押すと下のようになり、もう一度押すことで長さを変えることができるようになるので変更する。(動画では横を100mm、縦を20mmにしている。)</p>
+        <p><img controls width="600" height="320" src="リンク8.jpg" rel="lightbox"></p>
+	<p>⑨「⑧」までできれば「ツールバー」の右の方にある「スケッチを終了」を選択する。</p>
+        <p><img controls width="600" height="320" src="リンク9.jpg" rel="lightbox"></p>
+    </div>
+</div>
+    <script>
+        // コンテンツを読み込む関数
+        function loadContent(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("content").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

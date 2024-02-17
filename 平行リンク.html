@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #menu {
+            width: 20%;
+            background-color: #696969;
+            color: #fff;
+            padding: 20px;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h1>メニュー</h1>
+        <ul>
+            <!-- メニュー項目1をクリックした際の処理を追加 -->
+            <li><a href="平行リンク.html">ホーム</a></li>
+	<p>リンク1</p>
+            <li><a href="リンク1_1.html">スケッチ(長方形)</a></li>
+            <li><a href="リンク1_2.html">押し出し</a></li>
+	    <li><a href="リンク1_3.html">スケッチ(円)</a></li>
+            <li><a href="リンク1_4.html">押し出し(切り取り)</a></li>
+		<ul>
+            		<li><a href="リンク1_課題1.html">課題1_1</a></li>
+			<li><a href="リンク1_課題2.html">課題1_2</a></li>
+			<li><a href="リンク1_解説1.html">解説1_1</a></li>
+			<li><a href="リンク1_解説2.html">解説1_2</a></li>
+		</ul>
+	<p>リンク2</p>
+            <li><a href="リンク2_1.html">スケッチと押し出し</a></li>
+		<ul>
+            		<li><a href="リンク2_課題1.html">課題2_1</a></li>
+			<li><a href="リンク2_課題2.html">課題2_2</a></li>
+			<li><a href="リンク2_解説1.html">解説2_1</a></li>
+			<li><a href="リンク2_解説2.html">解説2_2</a></li>
+		</ul>
+	<p>ジョイント</p>
+            <li><a href="リンク1_ジョイント1.html">ジョイント</a></li>
+            <li><a href="リンク2_ジョイント1.html">駆動の仕方と接触の有効化</a></li>
+                <ul>
+            <li><a href="リンク3_課題1.html">課題3_1</a></li>
+            <li><a href="リンク3_課題2.html">課題3_2</a></li>
+       	    <li><a href="リンク3_解説1.html">解説2_2</a></li>
+	    <li><a href="リンク3_解説2.html">解説2_2</a></li>
+		</ul>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>平行リンク</h1>
+	<p>メニューの青文字をクリックすると説明のページまたは課題のページに移動します。課題はFusion360を使って達成してください。課題の答えは解説のページにあります。間違っていたら解説にある動画を見る、もう一度説明のページを見るなどしてからもう一度課題を行ってください。</p>
+</br>
+	<h3 style="text-align:center">作成する平行四辺形</h3>
+        <p style="text-align:center"><img controls width="600" height="320" src="リンクの表紙2.jpg" rel="lightbox"></p></br>
+</br>
+	<h3>　　　　　　　　　　　　<span style="color:blue;">リンク1</span>　　　　　　　　　　　<span style="color:red;">リンク2</span></h3>
+        <p style="text-align:center"><img controls height="180" src="rin9.jpg" rel="lightbox"><img controls height="180" src="押し出し7.jpg" rel="lightbox"></p>
+    </div>
+
+    <script>
+        // コンテンツを読み込む関数
+        function loadContent(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("content").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
